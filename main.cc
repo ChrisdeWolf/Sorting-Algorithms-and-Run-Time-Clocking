@@ -1,9 +1,5 @@
 //Christopher deWolf
-//ECE 2620-001
-//LAB 5
-//My lab writeup is in src folder labeled lab5writeup.txt
 //
-
 
 #include <iostream>
 #include <cmath>
@@ -98,13 +94,11 @@ void mergesort( signed long int *data, signed long int first, signed long int la
 
 int main()
 {
- 
 	ifstream infile; 
 	
 	int count = 0;
 	int v;
 	int n = 0;
-	
 	
 	signed long int x;
 	infile.open("/home/ubuntu/ece2620/labs/lab5/src/lab5biginputfile.txt");  //checks an input file and checks if runs
@@ -141,7 +135,6 @@ int main()
 		return 1;
 	}
 	
-
 	ofstream outfile;
 	while(1)                                            //while loop outside of switch statement and exits if 0 (case 4)
 	{
@@ -173,7 +166,6 @@ int main()
 			
 		    break;
 		case 2:
-	
 				bubblesort(data, n);       //calls bubblesort: O(n^2)
 			    
 			break;
